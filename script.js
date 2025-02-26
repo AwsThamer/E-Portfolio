@@ -41,5 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Call the function to load posts
     loadBlogPosts();
+
+    const toggleSwitch = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    toggleSwitch.addEventListener('change', function() {
+        body.classList.toggle('dark-mode');
+    });
   });
   
