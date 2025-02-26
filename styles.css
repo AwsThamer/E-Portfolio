@@ -1,0 +1,192 @@
+/* Apply the cozy Google Font and a warm color palette */
+body {
+    font-family: 'Comfortaa', 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+    background-size: 800% 800%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #333;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Header styling with a translucent, cozy look */
+  header {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e0dcd6;
+    animation: slideDown 1s ease-out forwards;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #ff6f61; /* Harmonious accent color */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #e55b50;
+  }
+  
+  /* Main container with a cozy card feel */
+  main {
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+  }
+  
+  /* Section styling with a gentle fade-in effect */
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fdf6ec;
+    border-radius: 8px;
+    border: 1px solid #e0dcd6;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Article styling remains friendly and clear */
+  article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0dcd6;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  #portfolio article,
+  #blog article {
+    background-color: #f9f9f9;
+    border: 1px solid #e0dcd6;
+  }
+  
+  #skills ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  /* Footer fixed at the bottom with a subtle shadow */
+  footer {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #e0dcd6;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  /* Scroll-to-top button styling with a cozy pastel accent */
+  .scroll-to-top {
+    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+    background-size: 800% 800%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 1000;
+  }
+  
+  .scroll-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Additional cozy section styling */
+  section h2 {
+    color: #333;
+    font-weight: 600;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  a {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #e55b50;
+  }
+  
