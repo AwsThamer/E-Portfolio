@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Welcome to My Blog!');
+    console.log('I can see this!');
   
     // Create and append the scroll-to-top button (its styling is handled in CSS)
     const scrollToTopButton = document.createElement('button');
