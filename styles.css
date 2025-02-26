@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+    background: linear-gradient(270deg, #a8e6cf, #dcedc1, #dcedc1, #a8e6cf);
     background-size: 800% 800%;
     animation: gradientAnimation 10s ease infinite;
     color: #333;
@@ -55,14 +55,14 @@ body {
   }
   
   nav ul li a {
-    color: #ff6f61; /* Harmonious accent color */
+    color: #88b04b;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s, transform 0.3s;
   }
   
   nav ul li a:hover {
-    color: #e55b50;
+    color: #6b8e23;
   }
   
   /* Main container with a cozy card feel */
@@ -148,7 +148,7 @@ body {
   
   /* Scroll-to-top button styling with a cozy pastel accent */
   .scroll-to-top {
-    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+    background: linear-gradient(270deg, #a8e6cf, #dcedc1, #dcedc1, #a8e6cf);
     background-size: 800% 800%;
     animation: gradientAnimation 10s ease infinite;
     color: #fff;
@@ -184,6 +184,6 @@ body {
   }
   
   a:hover {
-    color: #e55b50;
+    color: #6b8e23;
   }
   
