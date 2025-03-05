@@ -333,3 +333,15 @@ body, p, h1, h2, h3, h4, h5, h6, article {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
 }
+
+.whatsapp-link {
+    color: #25D366;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.whatsapp-link:hover {
+    color: #128C7E;
+    transform: scale(1.1);
+}
