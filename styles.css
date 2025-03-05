@@ -288,3 +288,20 @@ a:hover {
 .toggle-switch:checked + .toggle-label:before {
     transform: translateX(26px);
 }
+
+#print-cv-button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#print-cv-button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
