@@ -28,19 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const posts = [
         {
           title: "Hack the Future: Belgium's Most Epic Hackathon",
-          content: "Hack the Future is an annual hackathon that brings together IT and creative students for an epic experience. The event offers a unique opportunity to network with industry experts and tackle real-world challenges. The next edition is scheduled for 19 – 20 November 2024. For more details, visit the <a href='https://www.hackthefuture.be' target='_blank'>official website</a>."
+          content: "I successfully participated in Hack the Future, an annual hackathon that brings together IT and creative students for an epic experience. It was a fantastic opportunity to network with industry experts and tackle real-world challenges. The event was incredibly inspiring and motivating."
         },
         {
           title: "Tech&Meet: Investigating Cybercrime - On the Frontline",
-          content: "Discover how cybercrime is investigated and prosecuted with Deraeve Diederik, investigating judge at the tribunal of first instance in West Flanders. Date: February 11, 2025 – 7 PM."
+          content: "I completed the Tech&Meet event on Investigating Cybercrime, where I learned from Deraeve Diederik, an investigating judge. The insights into how cybercrime is investigated and prosecuted were invaluable, and the event was both informative and engaging."
         },
         {
           title: "Tech&Meet: Boost Your Cybersecurity Skills with TryHackMe",
-          content: "Learn from Niels Deryckere, Content Engineer at TryHackMe, how to continuously improve your cybersecurity skills and how TryHackMe can support your learning journey. Date: February 25, 2025 – 7 PM."
+          content: "I attended the Tech&Meet session with Niels Deryckere from TryHackMe. It was an excellent opportunity to enhance my cybersecurity skills and learn how TryHackMe can support my learning journey. The session was highly educational and inspiring."
         },
         {
           title: "Tech&Meet: The Quantum Threat – Are You Ready?",
-          content: "Explore the impact of quantum computing on digital security and learn how organizations can prepare for the quantum threat with Eric Michiels, Executive Architect at IBM and IBM Quantum Ambassador. Date: March 25, 2025 – 7 PM."
+          content: "I participated in the Tech&Meet event on the Quantum Threat with Eric Michiels from IBM. The session provided deep insights into the impact of quantum computing on digital security and how to prepare for future challenges. It was a thought-provoking and enlightening experience."
         },
         // Add more posts here
       ];
