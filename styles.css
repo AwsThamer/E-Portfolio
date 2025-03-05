@@ -119,6 +119,13 @@ article {
     padding-left: 20px;
 }
 
+/* Profile picture styling for About section */
+.profile-pic {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
 /* Footer fixed at the bottom with a subtle shadow */
 footer {
     background-color: #ffffff;
@@ -281,4 +288,3 @@ a:hover {
 .toggle-switch:checked + .toggle-label:before {
     transform: translateX(26px);
 }
-  
