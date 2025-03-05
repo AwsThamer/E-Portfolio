@@ -79,4 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('print-cv-button').addEventListener('click', function() {
     window.print();
   });
+
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
 });

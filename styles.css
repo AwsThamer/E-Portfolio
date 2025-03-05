@@ -9,6 +9,10 @@ body {
     animation: gradientAnimation 10s ease infinite;
     color: #333;
     background-color: white;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 @keyframes gradientAnimation {
@@ -321,4 +325,11 @@ a:hover {
     #print-cv-button {
         display: none;
     }
+}
+
+body, p, h1, h2, h3, h4, h5, h6, article {
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
