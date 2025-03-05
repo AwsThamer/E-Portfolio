@@ -75,4 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleSwitch.addEventListener('change', function() {
     body.classList.toggle('dark-mode');
   });
+
+  document.getElementById('print-cv-button').addEventListener('click', function() {
+    window.print();
+  });
 });

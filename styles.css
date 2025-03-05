@@ -305,3 +305,20 @@ a:hover {
     background-color: #005bb5;
     transform: translateY(-2px);
 }
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #cv, #cv * {
+        visibility: visible;
+    }
+    #cv {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    #print-cv-button {
+        display: none;
+    }
+}
