@@ -350,8 +350,9 @@ body, p, h1, h2, h3, h4, h5, h6, article {
 #photo-slider {
     margin: 2rem auto;
     padding: 2rem;
-    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
-    border-radius: 15px;
+    background-color: #fdf6ec;
+    border-radius: 8px;
+    border: 1px solid #e0dcd6;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-out forwards;
 }
