@@ -56,6 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: "Teaching and Protecting Local Companies from Cyber Attacks",
       content: "Dr. Stanislav Milevsky shared valuable insights and recommendations on cybersecurity, focusing on protecting local companies from digital threats. His guidance has greatly influenced my approach to cybersecurity education."
+    },
+    {
+      title: "Conducting a Website Security Audit",
+      content: "In this post, I share the process behind conducting a comprehensive website security audit. The audit involved examining various security aspects, identifying vulnerabilities, and implementing best practices to enhance protection. The approach focused on thorough analysis, proactive measures, and providing actionable recommendations to ensure robust security for online platforms."
     }
     // Additional posts can be added here
   ];
