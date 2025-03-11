@@ -87,4 +87,123 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
   });
+
+  // Photo Slider Functionality
+  const slider = document.querySelector('.slider');
+  const slidesContainer = document.querySelector('.slides');
+  const slides = document.querySelectorAll('.slides img');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  let currentSlide = 0;
+  let slideWidth = 0;
+  let autoplayInterval;
+  let isHovering = false;
+  
+  // Create indicators
+  const indicatorsContainer = document.createElement('div');
+  indicatorsContainer.className = 'slide-indicators';
+  slider.appendChild(indicatorsContainer);
+  
+  // Add indicators for each slide
+  slides.forEach((_, index) => {
+    const indicator = document.createElement('div');
+    indicator.className = 'indicator';
+    if (index === 0) indicator.classList.add('active');
+    indicator.addEventListener('click', () => {
+      goToSlide(index);
+      resetAutoplay();
+    });
+    indicatorsContainer.appendChild(indicator);
+  });
+  
+  // Get all indicators
+  const indicators = document.querySelectorAll('.indicator');
+
+  // Set initial slide width on load and resize
+  function setSlideWidth() {
+    slideWidth = slider.clientWidth;
+    slides.forEach(slide => {
+      slide.style.width = `${slideWidth}px`;
+    });
+    // Update slider position after resize
+    goToSlide(currentSlide, false);
+  }
+
+  // Initialize slider
+  function initSlider() {
+    setSlideWidth();
+    window.addEventListener('resize', setSlideWidth);
+    
+    // Add autoplay
+    startAutoplay();
+    
+    // Pause on hover
+    slider.addEventListener('mouseenter', () => {
+      isHovering = true;
+      clearInterval(autoplayInterval);
+    });
+    
+    slider.addEventListener('mouseleave', () => {
+      isHovering = false;
+      startAutoplay();
+    });
+    
+    // Add keyboard navigation
+    document.addEventListener('keydown', handleKeyboardNavigation);
+  }
+
+  function goToSlide(index, animate = true) {
+    currentSlide = index;
+    
+    // Update indicators
+    indicators.forEach((indicator, i) => {
+      indicator.classList.toggle('active', i === currentSlide);
+    });
+    
+    // Move slider to current slide
+    const offset = -currentSlide * slideWidth;
+    slidesContainer.style.transition = animate ? 'transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)' : 'none';
+    slidesContainer.style.transform = `translateX(${offset}px)`;
+  }
+
+  function nextSlide() {
+    const newIndex = (currentSlide + 1) % slides.length;
+    goToSlide(newIndex);
+    resetAutoplay();
+  }
+
+  function prevSlide() {
+    const newIndex = (currentSlide - 1 + slides.length) % slides.length;
+    goToSlide(newIndex);
+    resetAutoplay();
+  }
+  
+  function startAutoplay() {
+    clearInterval(autoplayInterval);
+    autoplayInterval = setInterval(() => {
+      if (!isHovering) {
+        nextSlide();
+      }
+    }, 5000); // Change slide every 5 seconds
+  }
+  
+  function resetAutoplay() {
+    clearInterval(autoplayInterval);
+    startAutoplay();
+  }
+  
+  function handleKeyboardNavigation(e) {
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+    }
+  }
+
+  // Event listeners for navigation buttons
+  prevButton.addEventListener('click', prevSlide);
+  nextButton.addEventListener('click', nextSlide);
+
+  // Initialize the slider
+  initSlider();
 });
