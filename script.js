@@ -60,14 +60,24 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: "Conducting a Website Security Audit",
       content: "In this post, I share the process behind conducting a comprehensive website security audit. The audit involved examining various security aspects, identifying vulnerabilities, and implementing best practices to enhance protection. The approach focused on thorough analysis, proactive measures, and providing actionable recommendations to ensure robust security for online platforms."
+    },
+    {
+      title: "Building an Interactive Event Management Platform",
+      date: "March 24, 2025",
+      content: "I am currently developing a web application for event and exhibitor management, inspired by Expodoc. The project is built using Next.js for the frontend and Supabase for the backend. One of the key features is an interactive floor plan, created with Konva.js, allowing users to dynamically place, resize, and modify exhibitor booths. Additionally, I'm implementing database storage so users can save and load their layouts seamlessly. Future improvements include user authentication, advanced shape customization, and real-time collaboration. This project is a great opportunity to apply my skills in frontend development, database management, and UI/UX design."
     }
+    
     // Additional posts can be added here
   ];
 
   const blogSection = document.getElementById('blog');
   posts.forEach(post => {
     const article = document.createElement('article');
-    article.innerHTML = `<h3>${post.title}</h3><p>${post.content}</p>`;
+    let htmlContent = `<h3>${post.title}</h3><p>${post.content}</p>`;
+    if (post.date) {
+        htmlContent += `<p>Date: ${post.date}</p>`;
+    }
+    article.innerHTML = htmlContent;
     blogSection.appendChild(article);
   });
 
