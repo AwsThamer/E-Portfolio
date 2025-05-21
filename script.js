@@ -65,6 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Building an Interactive Event Management Platform",
       date: "March 24, 2025",
       content: "I am currently developing a web application for event and exhibitor management, inspired by Expodoc. The project is built using Next.js for the frontend and Supabase for the backend. One of the key features is an interactive floor plan, created with Konva.js, allowing users to dynamically place, resize, and modify exhibitor booths. Additionally, I'm implementing database storage so users can save and load their layouts seamlessly. Future improvements include user authentication, advanced shape customization, and real-time collaboration. This project is a great opportunity to apply my skills in frontend development, database management, and UI/UX design."
+    },
+    {
+      title: "Introducing FloorSketch: Simple, Powerful Floor Plan Design",
+      content: "Create professional floor plans in minutes with FloorSketch! Our intuitive design tool features customizable shapes, text labels, and icons to bring your vision to life. Import blueprint images as references, toggle between metric and imperial measurements, and use grid snapping for precision. Design multi-floor buildings with our floor management system. Collaborate in real-time with teammates, organize elements with layers, and save your work securely in the cloud. Perfect for home renovations, office layouts, or event planning. Try FloorSketch today and transform how you design spaces! #FloorPlanDesign #InteriorDesign #Architecture"
     }
     
     // Additional posts can be added here
