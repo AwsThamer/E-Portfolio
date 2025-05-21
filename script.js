@@ -43,7 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       title: "Tech&Meet: The Quantum Threat – Are You Ready?",
-      content: "I participated in a session on the Quantum Threat with Eric Michiels from IBM. The event provided deep insights into the impact of quantum computing on digital security and how to prepare for future challenges."
+      date: "March 25, 2025",
+      content: "I attended the Tech&Meet session on 'The Quantum Threat' presented by Eric Michiels, Executive Architect at IBM and IBM Quantum Ambassador. The event provided deep insights into the impact of quantum computing on digital security and how organizations can prepare for these challenges. Eric discussed quantum-safe cryptography standards, IBM's quantum computing platforms, and the urgent need for businesses to start migrating to quantum-resistant algorithms. The presentation covered the risk of 'harvest now, decrypt later' attacks and demonstrated how current encryption methods could be broken by quantum computers. The photos in my gallery showcase this event and the critical information shared about quantum security readiness."
     },
     {
       title: "Internship as a Pentester at Group Van Damme",
