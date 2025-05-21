@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       title: "Introducing FloorSketch: Simple, Powerful Floor Plan Design",
+      date: "May 21, 2025",
       content: "Create professional floor plans in minutes with FloorSketch! Our intuitive design tool features customizable shapes, text labels, and icons to bring your vision to life. Import blueprint images as references, toggle between metric and imperial measurements, and use grid snapping for precision. Design multi-floor buildings with our floor management system. Collaborate in real-time with teammates, organize elements with layers, and save your work securely in the cloud. Perfect for home renovations, office layouts, or event planning. Try FloorSketch today and transform how you design spaces! #FloorPlanDesign #InteriorDesign #Architecture"
     }
     
