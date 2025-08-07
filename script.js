@@ -71,6 +71,83 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Introducing FloorSketch: Simple, Powerful Floor Plan Design",
       date: "May 21, 2025",
       content: "Create professional floor plans in minutes with FloorSketch! Our intuitive design tool features customizable shapes, text labels, and icons to bring your vision to life. Import blueprint images as references, toggle between metric and imperial measurements, and use grid snapping for precision. Design multi-floor buildings with our floor management system. Collaborate in real-time with teammates, organize elements with layers, and save your work securely in the cloud. Perfect for home renovations, office layouts, or event planning. Try FloorSketch today and transform how you design spaces! #FloorPlanDesign #InteriorDesign #Architecture"
+    },
+    {
+      title: "Building Network Scanner Pro: A Cross-Platform Network Analysis Tool",
+      date: "August 7, 2025",
+      content: `
+        <div class="project-showcase">
+          <div class="project-header">
+            <span class="project-badge">🚀 Featured Project</span>
+            <p><strong>Technologies:</strong> Go 1.21, Fyne v2 GUI Framework, ICMP/TCP Networking, GitHub Actions CI/CD</p>
+            <p><strong>🔗 Repository:</strong> <a href="https://github.com/AwsThamer/NetworkScanner" target="_blank">GitHub - NetworkScanner</a></p>
+          </div>
+
+          <h4>💡 Project Overview</h4>
+          <p>Network Scanner Pro is a powerful, cross-platform network scanning tool that demonstrates advanced Go programming skills and modern GUI development. The project showcases proficiency in concurrent programming, network protocols, cross-platform development, and user interface design.</p>
+
+          <h4>🎯 Key Features Implemented</h4>
+          <ul>
+            <li><strong>🔍 Comprehensive Network Scanning:</strong> ICMP ping operations, port scanning with configurable ranges, full CIDR network exploration, and custom IP range support</li>
+            <li><strong>🎨 Beautiful GUI Interface:</strong> Bootstrap-inspired color scheme, card-based layout with gradient backgrounds, real-time progress bars, and color-coded results</li>
+            <li><strong>⚡ High Performance:</strong> Goroutine-based parallel scanning, semaphore-controlled concurrency limits, configurable timeouts, and memory-efficient operations</li>
+          </ul>
+
+          <h4>🏗️ Technical Architecture</h4>
+          <p>The application features a layered architecture with custom theme systems, concurrent network operations using goroutines, and cross-platform build automation. The GUI uses Fyne v2 framework with a custom Bootstrap-inspired theme, while the backend implements efficient concurrent scanning with semaphore control.</p>
+
+          <h4>📊 Performance Metrics</h4>
+          <ul>
+            <li><strong>Scanning Speed:</strong> Single host ping <100ms, network range (254 hosts) ~30 seconds with 50 concurrent operations</li>
+            <li><strong>Resource Efficiency:</strong> <50MB memory usage for typical operations</li>
+            <li><strong>Cross-platform:</strong> Works on Linux, Windows, macOS with automated builds via GitHub Actions</li>
+          </ul>
+
+          <h4>🔧 Development Challenges Solved</h4>
+          <ul>
+            <li><strong>Cross-Platform ICMP:</strong> Implemented unprivileged ping mode with fallback mechanisms</li>
+            <li><strong>GUI Performance:</strong> Background goroutines with channel-based communication prevent interface freezing</li>
+            <li><strong>User Experience:</strong> Added network presets (192.168.1.0/24, 10.0.0.0/24) for improved usability</li>
+          </ul>
+
+          <h4>🎓 Skills Demonstrated</h4>
+          <ul>
+            <li><strong>Go Language:</strong> Advanced concurrency patterns, interfaces, package management</li>
+            <li><strong>GUI Development:</strong> Custom theming, event handling, responsive design</li>
+            <li><strong>Network Programming:</strong> TCP/IP, ICMP protocols, socket programming</li>
+            <li><strong>DevOps:</strong> CI/CD pipelines, automated cross-platform builds, professional documentation</li>
+          </ul>
+
+          <h4>🚀 Technical Implementation Highlights</h4>
+          <p><strong>Custom Theme System:</strong> Implemented professional Bootstrap-inspired color scheme with primary blue (#007BFF), success green (#28A745), warning yellow (#FFC107), and error red (#DC3545).</p>
+          
+          <p><strong>Concurrent Processing:</strong> Semaphore-controlled goroutine pool limits concurrent operations to 50 workers, preventing resource exhaustion while maintaining high performance.</p>
+          
+          <p><strong>Cross-Platform Builds:</strong> Automated build system generates binaries for Linux (GUI/CLI), Windows (CLI), and macOS (CLI) with GitHub Actions integration.</p>
+
+          <h4>🔮 Future Enhancements</h4>
+          <ul>
+            <li>Windows GUI support with complete cross-platform implementation</li>
+            <li>Service detection on open ports with fingerprinting</li>
+            <li>Export functionality (JSON/CSV) for integration with other tools</li>
+            <li>Plugin system for extensible scan modules</li>
+            <li>Network topology visualization</li>
+          </ul>
+
+          <h4>🏆 Project Impact</h4>
+          <p>This project demonstrates practical application of advanced programming concepts in a real-world tool. It showcases technical depth in systems programming, user experience design, and professional software development practices. The combination of performance optimization, beautiful UI design, and comprehensive functionality makes it an excellent portfolio piece for cybersecurity and software development roles.</p>
+
+          <div class="project-links">
+            <p><strong>🔗 Project Links:</strong></p>
+            <ul>
+              <li><a href="https://github.com/AwsThamer/NetworkScanner" target="_blank">📁 Full Source Code</a></li>
+              <li><a href="https://github.com/AwsThamer/NetworkScanner/blob/main/README.md" target="_blank">📖 Technical Documentation</a></li>
+              <li><a href="https://github.com/AwsThamer/NetworkScanner/blob/main/BEAUTIFUL_GUI.md" target="_blank">🎨 Design Process</a></li>
+              <li><a href="https://github.com/AwsThamer/NetworkScanner/actions" target="_blank">⚙️ Build Pipeline</a></li>
+            </ul>
+          </div>
+        </div>
+      `
     }
     
     // Additional posts can be added here

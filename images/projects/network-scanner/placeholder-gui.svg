@@ -1,0 +1,71 @@
+<!-- Placeholder for Network Scanner Pro Screenshot -->
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#007bff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6c757d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="80" fill="url(#headerGrad)"/>
+  <text x="400" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">🔍 Network Scanner Pro</text>
+  
+  <!-- Main content area -->
+  <rect x="50" y="120" width="700" height="450" fill="white" stroke="#dee2e6" stroke-width="2" rx="10"/>
+  
+  <!-- Network input section -->
+  <rect x="80" y="150" width="320" height="120" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1" rx="5"/>
+  <text x="90" y="175" fill="#495057" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Network Configuration</text>
+  <rect x="90" y="185" width="240" height="30" fill="white" stroke="#ced4da" stroke-width="1" rx="3"/>
+  <text x="95" y="205" fill="#6c757d" font-family="Arial, sans-serif" font-size="12">192.168.1.0/24</text>
+  
+  <!-- Preset buttons -->
+  <rect x="90" y="225" width="80" height="25" fill="#007bff" rx="12"/>
+  <text x="130" y="242" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">192.168.1.0/24</text>
+  <rect x="180" y="225" width="80" height="25" fill="#6c757d" rx="12"/>
+  <text x="220" y="242" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">10.0.0.0/24</text>
+  
+  <!-- Port configuration -->
+  <rect x="420" y="150" width="280" height="120" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1" rx="5"/>
+  <text x="430" y="175" fill="#495057" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Port Configuration</text>
+  <rect x="430" y="185" width="100" height="30" fill="white" stroke="#ced4da" stroke-width="1" rx="3"/>
+  <text x="435" y="205" fill="#6c757d" font-family="Arial, sans-serif" font-size="12">1</text>
+  <text x="540" y="205" fill="#495057" font-family="Arial, sans-serif" font-size="12">to</text>
+  <rect x="560" y="185" width="100" height="30" fill="white" stroke="#ced4da" stroke-width="1" rx="3"/>
+  <text x="565" y="205" fill="#6c757d" font-family="Arial, sans-serif" font-size="12">1024</text>
+  
+  <!-- Action buttons -->
+  <rect x="80" y="300" width="140" height="40" fill="#28a745" rx="5"/>
+  <text x="150" y="325" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Ping Range</text>
+  <rect x="240" y="300" width="140" height="40" fill="#007bff" rx="5"/>
+  <text x="310" y="325" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Port Scan</text>
+  <rect x="400" y="300" width="140" height="40" fill="#ffc107" rx="5"/>
+  <text x="470" y="325" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Network Scan</text>
+  <rect x="560" y="300" width="140" height="40" fill="#dc3545" rx="5"/>
+  <text x="630" y="325" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Single Ping</text>
+  
+  <!-- Progress bar -->
+  <rect x="80" y="360" width="620" height="20" fill="white" stroke="#ced4da" stroke-width="1" rx="10"/>
+  <rect x="82" y="362" width="248" height="16" fill="#007bff" rx="8"/>
+  <text x="400" y="375" text-anchor="middle" fill="#495057" font-family="Arial, sans-serif" font-size="12">Scanning... 40%</text>
+  
+  <!-- Results area -->
+  <rect x="80" y="400" width="620" height="150" fill="white" stroke="#ced4da" stroke-width="1" rx="5"/>
+  <text x="90" y="420" fill="#495057" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Scan Results:</text>
+  <text x="90" y="440" fill="#28a745" font-family="monospace, sans-serif" font-size="11">✓ 192.168.1.1 - RESPONSIVE (25ms)</text>
+  <text x="90" y="455" fill="#28a745" font-family="monospace, sans-serif" font-size="11">✓ 192.168.1.2 - RESPONSIVE (31ms)</text>
+  <text x="90" y="470" fill="#dc3545" font-family="monospace, sans-serif" font-size="11">✗ 192.168.1.3 - NO RESPONSE</text>
+  <text x="90" y="485" fill="#28a745" font-family="monospace, sans-serif" font-size="11">✓ 192.168.1.4 - RESPONSIVE (18ms)</text>
+  <text x="90" y="500" fill="#ffc107" font-family="monospace, sans-serif" font-size="11">⚠ 192.168.1.5 - TIMEOUT</text>
+  
+  <!-- Footer -->
+  <text x="400" y="590" text-anchor="middle" fill="#6c757d" font-family="Arial, sans-serif" font-size="10">Network Scanner Pro - Cross-Platform Network Analysis Tool</text>
+</svg>
