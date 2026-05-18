@@ -3,47 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My E-Portfolio</title>
-  <!-- Google Font for a friendly, rounded look -->
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <title>Aws Thamer | Cybersecurity Portfolio</title>
+  <!-- Premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>E-Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#cv">Curriculum Vitae</a></li>
-        <li><a href="#passive-events">Passive Events</a></li>
-        <li><a href="#active-event">Active Event</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#extras">Extras</a></li>
-        <li><a href="#photo-slider">Gallery</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-mark">AT</span>
+        <div class="brand-copy">
+          <h1>Aws Thamer</h1>
+          <p class="brand-role">Cybersecurity and Full-Stack Developer</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#cv" class="nav-cta">CV</a></li>
+          <li><a href="#passive-events">Passive Events</a></li>
+          <li><a href="#active-event">Active Event</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#extras">Extras</a></li>
+          <li><a href="#photo-slider">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="page">
     <!-- Home Section -->
-    <section id="home">
-      <h2>Home</h2>
-      <p>Welcome to my e‑portfolio. Here you can find information about my work, skills, and blog posts.</p>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Cybersecurity | Secure Development | Systems Engineering</p>
+        <h2>Building secure, high-performance digital experiences.</h2>
+        <p class="lead">Welcome to my e‑portfolio. Explore my work in cybersecurity, network tooling, and modern web development built with a security-first mindset.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#blog" class="btn btn-secondary">Read the Blog</a>
+        </div>
+        <div class="hero-tags">
+          <span>Penetration Testing</span>
+          <span>Secure Web Apps</span>
+          <span>Go &amp; .NET</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Focus Areas</h3>
+        <ul>
+          <li>Threat analysis, incident response, and SIEM monitoring</li>
+          <li>Network security, cryptography, and digital forensics</li>
+          <li>Modern web &amp; systems development with a security-first approach</li>
+        </ul>
+      </div>
     </section>
 
     <!-- About Section with Extras -->
-    <section id="about">
+    <section id="about" class="about-section">
       <h2>About Me</h2>
-      <!-- Replace placeholder image with the provided image -->
-      <img src="images/profile.png" alt="Profile picture of Aws Thamer" class="profile-pic">
-      <p>I am Aws Thamer, a cybersecurity professional with a passion for technology and innovation. I have worked on various projects in the IT field, focusing on security and efficiency.</p>
-      <p>In my free time, I explore new technologies, participate in hackathons, and share my knowledge through tech talks and workshops.</p>
-      <!-- Extra markup for enhanced content -->
-      <h3>My Journey</h3>
-      <p>My passion for cybersecurity and technology started at a young age. Over the years, I have honed my skills in ethical hacking, digital forensics, and network security. I continually seek out new challenges and opportunities to learn and grow both personally and professionally.</p>
+      <div class="about-grid">
+        <img src="images/profile.png" alt="Profile picture of Aws Thamer" class="profile-pic">
+        <div class="about-content">
+          <p>I am Aws Thamer, a cybersecurity professional with a passion for technology and innovation. I have worked on various projects in the IT field, focusing on security and efficiency.</p>
+          <p>In my free time, I explore new technologies, participate in hackathons, and share my knowledge through tech talks and workshops.</p>
+          <h3>My Journey</h3>
+          <p>My passion for cybersecurity and technology started at a young age. Over the years, I have honed my skills in ethical hacking, digital forensics, and network security. I continually seek out new challenges and opportunities to learn and grow both personally and professionally.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
