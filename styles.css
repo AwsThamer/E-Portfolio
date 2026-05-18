@@ -7,6 +7,7 @@
     --surface-soft: rgba(255, 255, 255, 0.92);
     --surface-accent: rgba(233, 238, 255, 0.7);
     --border: rgba(148, 163, 184, 0.28);
+    --content-width: 1200px;
     --text: #0f172a;
     --muted: #475569;
     --accent: #5b7cfa;
@@ -91,7 +92,7 @@ body.dark-mode .site-header {
 }
 
 .header-inner {
-    max-width: 1200px;
+    max-width: var(--content-width);
     margin: 0 auto;
     padding: 20px 24px;
     display: flex;
@@ -173,7 +174,7 @@ body.dark-mode .site-header {
 }
 
 main.page {
-    max-width: 1100px;
+    max-width: var(--content-width);
     margin: 0 auto;
     padding: 90px 24px 120px;
     display: flex;
@@ -838,13 +839,6 @@ footer p {
     }
 }
 
-/* Projects Section Styles */
-#projects {
-    padding: 32px;
-    max-width: none;
-    margin: 0;
-}
-
 .project-card {
     background: linear-gradient(135deg, var(--surface-strong) 0%, var(--surface-soft) 100%);
     border-radius: 15px;
@@ -955,7 +949,7 @@ footer p {
     border-radius: 999px;
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.1px;
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
