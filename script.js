@@ -169,8 +169,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
   const modeText = document.getElementById('mode-text');
 
+  const updateModeText = () => {
+    modeText.textContent = body.classList.contains('dark-mode') ? 'Dark mode' : 'Light mode';
+  };
+
+  updateModeText();
+
   toggleSwitch.addEventListener('change', function() {
     body.classList.toggle('dark-mode');
+    updateModeText();
   });
 
   document.getElementById('print-cv-button').addEventListener('click', function() {
