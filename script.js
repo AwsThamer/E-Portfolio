@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modeText = document.getElementById('mode-text');
 
   const updateModeText = () => {
-    modeText.textContent = body.classList.contains('dark-mode') ? 'Dark' : 'Light';
+    modeText.textContent = body.classList.contains('dark-mode') ? 'Theme: Dark' : 'Theme: Light';
   };
 
   updateModeText();
