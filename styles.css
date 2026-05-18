@@ -4,6 +4,8 @@
     --bg-glow-2: rgba(20, 184, 166, 0.18);
     --surface: rgba(255, 255, 255, 0.9);
     --surface-strong: #ffffff;
+    --surface-soft: rgba(255, 255, 255, 0.92);
+    --surface-accent: rgba(233, 238, 255, 0.7);
     --border: rgba(148, 163, 184, 0.28);
     --text: #0f172a;
     --muted: #475569;
@@ -44,6 +46,8 @@ body.dark-mode {
     --bg-glow-2: rgba(45, 212, 191, 0.2);
     --surface: rgba(15, 23, 42, 0.86);
     --surface-strong: #0f172a;
+    --surface-soft: rgba(15, 23, 42, 0.92);
+    --surface-accent: rgba(30, 41, 59, 0.7);
     --border: rgba(148, 163, 184, 0.2);
     --text: #f8fafc;
     --muted: #cbd5f5;
@@ -842,7 +846,7 @@ footer p {
 }
 
 .project-card {
-    background: linear-gradient(135deg, var(--surface-strong) 0%, rgba(255, 255, 255, 0.92) 100%);
+    background: linear-gradient(135deg, var(--surface-strong) 0%, var(--surface-soft) 100%);
     border-radius: 15px;
     padding: 30px;
     margin: 30px 0;
@@ -987,7 +991,7 @@ footer p {
     text-align: center;
     margin-top: 40px;
     padding: 25px;
-    background: linear-gradient(135deg, var(--surface-strong) 0%, rgba(233, 238, 255, 0.7) 100%);
+    background: linear-gradient(135deg, var(--surface-strong) 0%, var(--surface-accent) 100%);
     border-radius: 12px;
     border: 1px solid var(--border);
 }
